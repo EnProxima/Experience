@@ -1,6 +1,8 @@
 ### Cost 
  amount of money spent on specific activity or resource
 
+### Value stream 
+series of steps an organization undertakes to create and deliver products and services to customer (***ITIL 4***)
 
 ### Value chain 
  a set of activities that an organization carries out to create value for its customers
@@ -17,6 +19,12 @@ A horizontal market is a market in which a product or service meets a need of a 
  
  ### OTT 
  (Over-The-Top) -  is where a telecommunications service provider delivers one or more services across an IP network. The IP networks is predominantly the public internet although sometimes telco cloud run services delivered via a corporation's existing IP-VPN from another provider, as opposed to the carrier's own access network.[1] It embraces a variety of telco services including communications (e.g. voice and messaging), content (e.g. TV and music) and cloud-based (e.g. compute and storage) offerings.[2]
+
+
+
+### Process 
+ set of interrellated or interacting activities that transform inputs to outputs. Processes define  the sequences of actions and their dependencies. (***ITIL 4***)
+
 
  ### Product 
 A configuration of an organization'a resources designed to offer value for a consumer (***ITIL 4***)

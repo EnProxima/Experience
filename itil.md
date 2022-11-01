@@ -37,3 +37,41 @@ describe a telecommunication service that is provided to a customer
 ![](Images/ITIL_Output_Outcome_Value.svg)
 
 
+# For dimension service management
+![](Images/ITIL_4d_of_service.jpg)
+The for dimensions do not have sharp boundaries and may overlap.
+
+## People
+
+* Roles and responsibilities 
+* Formal orgenizational structures
+* Culture
+* Required staffing and competences
+
+## Technologies
+
+***Support service management***
+* workflow management system
+* knowledge bases
+* inventory systems
+* communication systems
+* analytical tools
+
+***in context of specific IT service***
+
+* Information created
+* technologies that support service
+* How information is exchanged between services
+
+## Partners and Suppliers
+![](Images/ITIL_suppliers_types.jpg)
+
+## Value streams
+
+* Activities
+* Workflows
+* Controls
+* Proceduers
+
+
+
