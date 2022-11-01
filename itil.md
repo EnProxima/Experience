@@ -18,6 +18,7 @@ But other sources may have another view to services
 
 ![](Images/ServiceLayers.jpg)
 
+
 At the same time, a differentiation between a general service (e.g., the installation 
 service of a service technician), a technical service (e.g., the transmission service of
 a mobile network) and a service as a product (e.g., consisting of general and
