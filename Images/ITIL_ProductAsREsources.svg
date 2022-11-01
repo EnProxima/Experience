@@ -1,0 +1,91 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="450pt" height="224pt" viewBox="0.00 0.00 450.49 223.8">
+<g id="graph0" class="graph" transform="translate(8.570729041960789,193.83235027140438) scale(0.8408964152537146)" data-name="G">
+
+<polygon fill="dimgray" stroke="none" points="-4,4 -4,-219.8 446.49,-219.8 446.49,4 -4,4"/>
+<!-- R -->
+<g id="node1" class="node" pointer-events="visible" data-name="Resources" data-comment="R">
+
+<polygon fill="greenyellow" stroke="greenyellow" points="260.8,-103.34 260.8,-118.26 228.69,-128.8 183.28,-128.8 151.17,-118.26 151.17,-103.34 183.28,-92.8 228.69,-92.8 260.8,-103.34"/>
+<text text-anchor="middle" x="205.99" y="-106.6" font-family="Times,serif" font-size="14.00">Resources</text><polygon fill="none" stroke="greenyellow" points="264.8,-100.45 264.8,-121.15 229.33,-132.8 182.64,-132.8 147.18,-121.15 147.18,-100.45 182.64,-88.8 229.33,-88.8 264.8,-100.45"/>
+
+</g>
+<!-- P -->
+<g id="node2" class="node" pointer-events="visible" data-name="People" data-comment="P">
+
+<polygon fill="greenyellow" stroke="greenyellow" points="82.15,-215.8 27.94,-215.8 27.94,-179.8 82.15,-179.8 82.15,-215.8"/>
+<text text-anchor="middle" x="55.04" y="-193.6" font-family="Times,serif" font-size="14.00">People</text>
+</g><g id="node6" class="node" pointer-events="visible" data-name="Product" data-comment="P">
+
+<polygon fill="greenyellow" stroke="greenyellow" points="442.27,-128.8 383.16,-128.8 383.16,-92.8 442.27,-92.8 442.27,-128.8"/>
+<text text-anchor="middle" x="412.71" y="-106.6" font-family="Times,serif" font-size="14.00">Product</text>
+</g>
+<!-- I -->
+<g id="node3" class="node" pointer-events="visible" data-name="Information" data-comment="I">
+
+<polygon fill="greenyellow" stroke="greenyellow" points="110.12,-161.4 -0.04,-161.4 -0.04,-120.2 110.12,-120.2 110.12,-161.4"/>
+<text text-anchor="middle" x="55.04" y="-145" font-family="Times,serif" font-size="14.00">Information </text>
+<text text-anchor="middle" x="55.04" y="-128.2" font-family="Times,serif" font-size="14.00"> and Technology</text>
+</g><g id="edge1" class="edge" data-name="People-&gt;Resources" data-comment="I">
+
+<path fill="none" stroke="rgb(173, 255, 47)" d="M82.43,-185.28C91.32,-180.88 101.22,-175.8 110.08,-170.8 128.68,-160.31 148.73,-147.82 165.59,-136.95"/>
+<polygon fill="greenyellow" stroke="greenyellow" points="167.36,-139.98 173.84,-131.6 163.55,-134.11 167.36,-139.98"/>
+</g><g id="edge5" class="edge" data-name="Resources-&gt;Product" data-comment="I">
+
+<path fill="none" stroke="rgb(173, 255, 47)" d="M265.11,-110.8C299.02,-110.8 340.97,-110.8 371.29,-110.8"/>
+<polygon fill="greenyellow" stroke="greenyellow" points="371.19,-114.3 381.19,-110.8 371.19,-107.3 371.19,-114.3"/>
+<text text-anchor="middle" x="323.91" y="-131.8" font-family="Times,serif" font-size="14.00" fill="rgb(245, 222, 179)">Configuration </text>
+<text text-anchor="middle" x="323.91" y="-115" font-family="Times,serif" font-size="14.00" fill="rgb(245, 222, 179)"> of resources</text>
+</g>
+<!-- V -->
+<!-- ValueStr -->
+<g id="node4" class="node" pointer-events="visible" data-name="ValueStr">
+
+<polygon fill="greenyellow" stroke="greenyellow" points="105.57,-101.4 4.51,-101.4 4.51,-60.2 105.57,-60.2 105.57,-101.4"/>
+<text text-anchor="middle" x="55.04" y="-85" font-family="Times,serif" font-size="14.00">Value Streams </text>
+<text text-anchor="middle" x="55.04" y="-68.2" font-family="Times,serif" font-size="14.00"> and Processes </text>
+</g><g id="edge2" class="edge" data-name="Information-&gt;Resources" data-comment="ValueStr">
+
+<path fill="none" stroke="rgb(173, 255, 47)" d="M110.24,-129.88C119.17,-128.09 128.52,-126.2 137.72,-124.35"/>
+<polygon fill="greenyellow" stroke="greenyellow" points="138.24,-127.82 147.35,-122.41 136.85,-120.95 138.24,-127.82"/>
+</g>
+<!-- S -->
+<g id="edge3" class="edge" data-name="ValueStr-&gt;Resources" data-comment="S">
+
+<path fill="none" stroke="rgb(173, 255, 47)" d="M106.05,-90.87C116.21,-92.92 127.06,-95.1 137.71,-97.25"/>
+<polygon fill="greenyellow" stroke="greenyellow" points="136.71,-100.62 147.21,-99.16 138.1,-93.76 136.71,-100.62"/>
+</g>
+<!-- ValueStr&#45;&gt;R -->
+
+<!-- SupplandPart -->
+<!-- SupplandPart -->
+<g id="node5" class="node" pointer-events="visible" data-name="SupplandPart">
+
+<polygon fill="greenyellow" stroke="greenyellow" points="99.63,-41.4 10.45,-41.4 10.45,-0.2 99.63,-0.2 99.63,-41.4"/>
+<text text-anchor="middle" x="55.04" y="-25" font-family="Times,serif" font-size="14.00">supplier </text>
+<text text-anchor="middle" x="55.04" y="-8.2" font-family="Times,serif" font-size="14.00"> and Partners</text>
+</g>
+
+<!-- SupplandPart&#45;&gt;Resources -->
+<g id="edge4" class="edge" data-name="SupplandPart-&gt;Resources">
+
+<path fill="none" stroke="rgb(173, 255, 47)" d="M94.57,-41.84C99.81,-44.8 105.1,-47.84 110.08,-50.8 128.44,-61.69 148.46,-74.24 165.36,-85.04"/>
+<polygon fill="greenyellow" stroke="greenyellow" points="163.33,-87.9 173.64,-90.35 167.11,-82.01 163.33,-87.9"/>
+</g>
+<!-- P -->
+
+
+<!-- Produ -->
+<!-- Product&#45;&gt;P -->
+<g id="edge6" class="edge" data-name="Product-&gt;ProdutOff" data-comment="Product-&gt;P">
+
+<path fill="none" stroke="greenyellow" d="M412.71,-92.33C412.71,-84.35 412.71,-76.36 412.71,-68.37"/>
+<polygon fill="greenyellow" stroke="greenyellow" points="416.21,-68.59 412.71,-58.59 409.21,-68.59 416.21,-68.59"/>
+<text text-anchor="middle" x="346.05" y="-62.14" font-family="Times,serif" font-size="14.00" fill="wheat">Offer value to customer</text>
+</g>
+<g id="node7" class="node" pointer-events="visible" data-name="ProdutOff" data-comment="Product-&gt;P">
+
+<ellipse fill="greenyellow" stroke="greenyellow" cx="412.71" cy="-38.8" rx="18" ry="18"/>
+</g>
+</g>
+</svg>

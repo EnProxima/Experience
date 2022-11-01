@@ -1,0 +1,31 @@
+digraph G{
+rankdir=LR
+bgcolor=dimgray
+node[shape=box,style=filled,color=greenyellow]
+edge[color=greenyellow,fontcolor=wheat]
+
+Resources [shape=doubleoctagon]
+People
+Information [label="Information \n and Technology"]
+ValueStr[label="Value Streams \n and Processes "]
+SupplandPart[label="supplier \n and Partners"]
+{Information ValueStr SupplandPart People}->Resources
+
+Resources -> Product [label="Configuration \n of resources"]
+
+ProdutOff[label="" shape=circle ]
+Product->ProdutOff[xlabel="Offer value to customer"] 
+rank = same; {ProdutOff Product }
+
+
+
+
+
+
+}
+
+Value [shape=circle label=""]
+ ProdutOff-> Value->Demand->ProdutOff
+
+ProdutOff ->Service->Value
+Demand[label="" shape=circle ]
