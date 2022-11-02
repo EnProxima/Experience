@@ -74,4 +74,40 @@ The for dimensions do not have sharp boundaries and may overlap.
 * Proceduers
 
 
+# Service Value System
+
+![](/Images/ITIL_SVS.jpg)
+
+The erchetecture of ITIL SVS specifically enables flefibility and discourages siloed working The service value chain activities and the practices in the SVS do not for, a fizex, rigid structure.
+
+An organization can take any number of forms includng but not limited to, sole traiderm companym corporation, firm enterprise authority etc.. 
+To acheive the maximum value from the SVS and to properly address the issue of organizational silos, it is preferable to include the whole organization in the scope rather that a subset
+
+## Guiding principles
+![](Images/ITIL_Guiding_principles.jpg)
+
+![](Images/ITIL_guidigprinciples.svg)
+
+Example CSI mapped to Guiding principles:
+![](Images/ITIL_guidigprinciples_and_CSI.jpg)
+
+
+## Governance
+Orgaization governance is a system by which organization is directed and controlled.
+Actions: 
+
+* Evaluate
+* Direct
+* Monitor
+
+## Service Value Chain
+![](Images/ITIL_SVC.jpg)
+
+The purpose of the plan value chain activity is to ensure a shared undertanding of the vision, current status, and improvement direction for all tour dimensions and all products and services across the organizaiton.
+
+
+
+## CSI
+![](Images/ITIL_CSI.jpg)
+
 

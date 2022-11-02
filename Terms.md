@@ -50,6 +50,10 @@ A means of enabling value co-creation be facilitating outcomes that customer wan
 **Other opinion**
 Service (in a broader sense) is a detailing of a product and can comprise a technical telecommunication service (e.g., voice telephony) as well as an additional provision of service (e.g., connection of telephone)
 
+### Service Management
+TBD
+
+
 
 ### Utility 
  What service does (***ITIL 4***)

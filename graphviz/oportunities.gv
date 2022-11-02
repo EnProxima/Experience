@@ -1,0 +1,10 @@
+digraph  G {
+rankdir=LR
+bgcolor=dimgray
+node[shape=box,style=filled,color=greenyellow]
+edge[color=greenyellow,fontcolor=wheat]
+
+{Oportunities Demand} -> SVS
+SVS[shape=octagon,width=1.2,height=1.2]
+
+}
