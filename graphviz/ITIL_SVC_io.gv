@@ -1,0 +1,37 @@
+digraph G{
+rankdir=LR
+bgcolor=dimgray
+node[shape=ellipse,style=filled,fontcolor=black,color=greenyellow]
+edge[color=greenyellow,fontcolor=wheat]
+
+Evaluate [shape=box fontcolor=black]
+
+Plan[shape=box fontcolor=black]
+Governance[shape=box fontcolor=black]
+Engage [shape=box fontcolor=black]
+Improve [shape=box fontcolor=black]
+Obtain_Bld [shape=box fontcolor=black]
+Des_trans [shape=box fontcolor=black]
+#plan in
+Governance->{Polices REquirements Constraints}->Plan
+Engage ->{demand oportunities}->Plan
+
+Improve->{VC_performance Impr_rep Imr_ideas} ->Plan
+
+Obtain_Bld->new_prod_serv_info->Plan
+
+Engage -> third_party_serv-> Plan
+
+#plan out
+Plan-> strategic_plan [color=violet]
+Plan->tactical_plan [color=violet]
+Plan->operational_plan[color=violet]
+Plan->portfolio_decision ->Des_trans[color=violet]
+Plan->archetectures ->Des_trans[color=violet]
+Plan->policies -> Des_trans [color=violet]
+Plan->impr_initiatives ->Improve[color=violet]
+Plan->product_serv_protfolio->Engage [color=violet]
+Plan->contract_req ->Engage[color=violet]
+
+
+}
