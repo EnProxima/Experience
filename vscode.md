@@ -1,5 +1,8 @@
-Terminal - Ctrl+`
-Command pallete - Ctrl+Shift+P
-Preview markdown - Ctrl+Shift+V
-Zoom in - Ctrl + +
+Terminal - Ctrl+` <br>
+Command pallete - Ctrl+Shift+P <br>
+Preview markdown - Ctrl+Shift+V <br>
+Zoom in - Ctrl + + <br>
+
+
+
 
