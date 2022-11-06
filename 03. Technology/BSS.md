@@ -10,7 +10,7 @@ particular network element.
 ![](Images/BSS_main_terms.png)
 
 [More details "An overview of online charging in 3GPP networks: new ways of
-utilizing user, network, and service related information"](pdf/OCS_review_terms_of_BSS.pdf)
+utilizing user, network, and service related information"](../Resources/pdf/OCS_review_terms_of_BSS.pdf)
 
 
 ## Catalog-driven approach

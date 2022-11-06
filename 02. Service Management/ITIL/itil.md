@@ -1,22 +1,22 @@
 # ITIL concepts
 ## Consumer
-![](Images/ITIL_consumer.svg)
+![](../Images/ITIL_consumer.svg)
 
 ## Product and service
-![](/Images/ITIL_ProductAsREsources.svg)
+![](../Images/ITIL_ProductAsREsources.svg)
 
 
-![](/Images/ITIL_ProductandService.svg)
+![](../Images/ITIL_ProductandService.svg)
 
 
 Service provides present their services to consumers in the form of service offerings, which describe one or mode services based on one or mode products.
 
-![](/Images/ITIL_Res_Prod_SO.svg)
+![](../Images/ITIL_Res_Prod_SO.svg)
 
 But other sources may have another view to services
-![](Images/ProductServRes_nonITIL.jpg)
+![](../Images/ProductServRes_nonITIL.jpg)
 
-![](Images/ServiceLayers.jpg)
+![](../Images/ServiceLayers.jpg)
 
 
 At the same time, a differentiation between a general service (e.g., the installation 
@@ -34,11 +34,11 @@ visible to the customer
 product should be used to
 describe a telecommunication service that is provided to a customer
 
-![](Images/ITIL_Output_Outcome_Value.svg)
+![](../Images/ITIL_Output_Outcome_Value.svg)
 
 
-# For dimension service management
-![](Images/ITIL_4d_of_service.jpg)
+# Four dimension service management
+![](../Images/ITIL_4d_of_service.jpg)
 The for dimensions do not have sharp boundaries and may overlap.
 
 ## People
@@ -64,7 +64,7 @@ The for dimensions do not have sharp boundaries and may overlap.
 * How information is exchanged between services
 
 ## Partners and Suppliers
-![](Images/ITIL_suppliers_types.jpg)
+![](../Images/ITIL_suppliers_types.jpg)
 
 ## Value streams
 
@@ -76,7 +76,7 @@ The for dimensions do not have sharp boundaries and may overlap.
 
 # Service Value System
 
-![](/Images/ITIL_SVS.jpg)
+![](../Images/ITIL_SVS.jpg)
 
 The erchetecture of ITIL SVS specifically enables flefibility and discourages siloed working The service value chain activities and the practices in the SVS do not for, a fizex, rigid structure.
 
@@ -84,9 +84,9 @@ An organization can take any number of forms includng but not limited to, sole t
 To acheive the maximum value from the SVS and to properly address the issue of organizational silos, it is preferable to include the whole organization in the scope rather that a subset
 
 ## Guiding principles
-![](Images/ITIL_Guiding_principles.jpg)
+![](../Images/ITIL_Guiding_principles.jpg)
 
-![](Images/ITIL_guidigprinciples.svg)
+![](../Images/ITIL_guidigprinciples.svg)
 
 Example CSI mapped to Guiding principles:
 ![](Images/ITIL_guidigprinciples_and_CSI.jpg)
@@ -101,13 +101,13 @@ Actions:
 * Monitor
 
 ## Service Value Chain
-![](Images/ITIL_SVC.jpg)
+![](../Images/ITIL_SVC.jpg)
 
 The purpose of the plan value chain activity is to ensure a shared undertanding of the vision, current status, and improvement direction for all tour dimensions and all products and services across the organizaiton.
 
 
 
 ## CSI
-![](Images/ITIL_CSI.jpg)
+![](../Images/ITIL_CSI.jpg)
 
 

@@ -81,7 +81,7 @@
 
 ------
 ***Материалы:*** 
-1. [Репин В. Моделирование процессов в натации BPMN. Пособие для начинающих. Часть 1](/pdf/Repin_V._Modelirovanie_Biznes_Proc.epub)
+1. [Репин В. Моделирование процессов в нотации BPMN. Пособие для начинающих. Часть 1](../Resources/pdf/Repin_V._Modelirovanie_Biznes_Proc.epub)
 2. [BPMN 2.0 poster](http://www.bpmb.de/images/BPMN2_0_Poster_EN.pdf)
 3. [Camunda modeler - software ](https://camunda.com/download/modeler/)
 4. [Interview Questions for Business Analysts and Systems Analysts](https://www.modernanalyst.com/Careers/InterviewQuestions/tabid/128/articleType/CategoryView/categoryId/40/Business-Process-Modeling-Notation-BPMN.aspx)

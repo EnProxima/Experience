@@ -5,7 +5,7 @@ SQL consists from 4 sublanguages:
 3. DCL - Data Conftrol Language
 4. DML - Data Manupulation Language
 
-![](Images/SQL_anlz_workflow.png)
+![](../Images/SQL_anlz_workflow.png)
 
 There are 2 types of databases
 1. row-stored database
