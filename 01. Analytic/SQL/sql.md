@@ -9,7 +9,7 @@ SQL consists from 4 sublanguages:
 
 There are 2 types of databases
 1. row-stored database
-2. column-storesd database
+2. column-stored database
 
 ***Row-store databases***—also called transactional databases—are designed to be efficient at processing transactions: INSERTs, UPDATEs, and DELETEs. Popular open source row-store databases include MySQL and Postgres. On the commercial side, Microsoft SQL Server, Oracle, and Teradata are widely used
 
@@ -25,21 +25,21 @@ Tables also optionally have indexes that make looking up specific records faster
 
 Column-store databases are generally the gold standard for fast analysis work. They use standard SQL (with some vendor-specific variations), and in many ways working with them is no different from working with a row-store database in terms of the queries you write. The size of the data matters, as do the computing and storage resources that have been allocated to the database. I have seen aggregations run across millions and billions of records in seconds. This does wonders for productivity.
 
-## Preparing for data analisys
+## Preparing for data analysis
 >data scientists spend from 50% to 80% of their time cleaning and wrangling their data. 
 
 Data preparation is easier when a data set has a data dictionary, a document or repository that has clear descriptions of the fields, possible values, how the data was collected, and how it relates to other data
 
-### Datatypes
-1. String (Char,varchar, text, blob)
-2. Numeric (int,smallint, bigint, fload, decimal,double)
+### Data types
+1. String (char, varchar, text, blob)
+2. Numeric (int, smallint, Bigint, float, decimal, double)
 3. logical(Boolean)
 4. date (datetime, time, timestamp)
 
 ### Structured versus unstructured
  Most databases were designed to handle **structured data**, where each attribute is stored in a column, and instances of each entity are represented as rows.
 
- When structured data is inserted into a table, each field is verified to ensure it conforms to the correct data type. Structured data is easy to query with SQL
+ When structured data is inserted into a table, each field is verified to ensure it conforms to the correct data type. Structured data is easy to query with SQL.
  **Unstructured data** is the opposite of structured data. There is no predetermined structure, data model, or data types.
 
  **Semistructured data** falls in between these two categories.
@@ -77,7 +77,7 @@ WHERE right(alphanum_order_id,1) = 'B'
 This will return every order with a last digit of B, which will be about 3% of the total if all letters and numbers are equally common, an assumption worth validating.
 ````
 ## Frofiling: distributions
-1. Check table name and it's structure (collumn names)
+1. Check table name and it's structure (column names)
 2. Histogram and frequencies
 
 ```
@@ -125,7 +125,7 @@ GROUP BY 1
 ;
 ```
 ## n-Tiles
-TBD
+Not available in portgresql.
 
 # Profiling. Data quality
 ### Detect duplicates
@@ -158,8 +158,8 @@ JOIN transactions b on a.customer_id = b.customer_id
 ;
 
 ```
-## Preparing: Data Cleaning
-## Cleaning Data with CASE Transformations
+## Preparing: Data Clearning
+## Clearning Data with CASE Transformations
 
 ```
 SELECT response_id
@@ -223,7 +223,7 @@ GROUP BY 1
 
 
 -------
-# Нормальизация БД
+# Нормализация БД
 ## Первая нормальная форма
 [Статья](https://info-comp.ru/first-normal-form)
 
@@ -256,4 +256,3 @@ GROUP BY 1
 ### Topics for review
 * [star schema modeling](https://en.wikipedia.org/wiki/Star_schema)
 * Snowflake schema
-* n-tile function. 

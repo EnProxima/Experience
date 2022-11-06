@@ -37,8 +37,7 @@ Product represents the commercial view and can consist of one or several service
 (***ITIL 4***)
 
 **Other opinion**
-Resource represents the lowest level of detail and, therefore, the building blocks of services. A resource can be a physical device that is owned by the customer (e.g.,
-telephone) or it can be used by the customer either completely or partially (e.g.,telephone line). Resources can also be immaterial goods (e.g., installation work)
+Resource represents the lowest level of detail and, therefore, the building blocks of services. A resource can be a physical device that is owned by the customer (e.g.,telephone) or it can be used by the customer either completely or partially (e.g.,telephone line). Resources can also be immaterial goods (e.g., installation work)
 
 
 ### Risk 

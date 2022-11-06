@@ -30,5 +30,5 @@ A Product Catalog works as a central configuration point for all the product and
 
  omni-channel and multi-touchpoint customer experience
  partner ecosystem
- revenie streams
+ revenue streams
 
