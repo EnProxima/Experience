@@ -19,13 +19,10 @@ But other sources may have another view to services
 ![](../Images/ServiceLayers.jpg)
 
 
-At the same time, a differentiation between a general service (e.g., the installation 
-service of a service technician), a technical service (e.g., the transmission service of
-a mobile network) and a service as a product (e.g., consisting of general and
-technical services) is important. In fact, the term service is used for all three different types.
+At the same time, a differentiation between a general service (e.g., the installation service of a service technician), a technical service (e.g., the transmission service of a mobile network) and a service as a product (e.g., consisting of general and technical services) is important. In fact, the term service is used for all three different types.
 
-. From an economic perspective, the telecommunications industry belongs to
-the service industry and, accordingly, a service will be provided to the customer (Zeithaml and Bitner 2003, p. 3). As shown in Fig. 2.14, only a subset of the services is perceived by the customer. All other services are executed within the telecommunications network as well as the telecommunications system, and are not visible to the customer product should be used to describe a telecommunication service that is provided to a customer 
+From an economic perspective, the telecommunications industry belongs to
+the service industry and, accordingly, a service will be provided to the customer (Zeithaml and Bitner 2003, p. 3). As shown in Fig. 2.14, only a subset of the services is perceived by the customer. All other services are executed within the telecommunications network as well as the telecommunications system, and are not visible to the customer product should be used to describe a telecommunication service that is provided to a customer.
 ![](../Images/ITIL_Output_Outcome_Value.svg)
 
 
@@ -97,9 +94,8 @@ Actions:
 
 The purpose of the plan value chain activity is to ensure a shared understanding of the vision, current status, and improvement direction for all tour dimensions and all products and services across the organization.
 
-
-
 ## CSI
 ![](../Images/ITIL_CSI.jpg)
+
 
 
