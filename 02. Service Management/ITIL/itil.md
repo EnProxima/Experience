@@ -99,3 +99,31 @@ The purpose of the plan value chain activity is to ensure a shared understanding
 
 
 
+## Organizational structures types
+![](../Images/ITIL_org_structure.svg)
+  
+
+In the digital service economy agilty and resilience ave vital for an organizational's success. Organizations must adopt new ways of structing their resources and competence. Common approach include:
+* the faster and mode flexible allocation of resources to new or more important tasks.
+* permanent simple multi-competent teams that are assigned to work exclusively on a product
+
+## Building affective team
+![](/02.%20Service%20Management/Images/ITIL_BuildingAffectiveTeam.svg)
+
+### Competency codes and profiles
+![](../Images/ITIL_profiles_roles.png)
+
+Skills in service management:
+1. Communication
+2. Business and commercial
+3. Relationship management
+4. Leadership
+5. Market and organizational knowledge
+6. Management and administration
+7. Developing innovation
+
+
+
+
+
+

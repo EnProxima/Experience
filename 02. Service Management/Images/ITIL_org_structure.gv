@@ -1,0 +1,30 @@
+digraph G {
+
+bgcolor=dimgray
+node[shape=box,style=filled,color=greenyellow fontcolor="#062744"]
+edge[color=greenyellow,fontcolor=aliceblue]
+
+Organization [color=chocolate]
+Functional, Divisional,Matrix, Flat  [color=yellow]
+Organization ->{Functional, Divisional,Matrix, Flat respauthor}
+
+{ rank=same; Functional, Divisional,Matrix, Flat Organization  };
+grouping[label="grouping / \n team creteria"]
+location [label="location"]
+co_located[label="co-located"]
+Organization ->{grouping  location valuestream}
+
+grouping->{function product territory customer }
+
+location ->{distributed co_located}
+
+valuestream[label="value stream"]
+end_to_end[label="end-to-end"]
+respauthor [label="responsibility \n and authority"]
+comcontr[label="command  \n and control"]
+selfdrive[label="self-drive"]
+valuestream ->{activities end_to_end}
+respauthor->{comcontr selfdrive}
+
+
+}
