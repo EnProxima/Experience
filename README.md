@@ -1,1 +1,2 @@
-This repository has materias which may be suitable for analytics in Telecom\IT areas.
+DRAFT 
+This repository will have useful articles for analysts in Telecom\IT.
