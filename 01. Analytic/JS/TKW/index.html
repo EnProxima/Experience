@@ -10,8 +10,8 @@
     </head>
 <body>
     <header id="header">
-        <nav class="links" style="--items: 5;">
-            <a href="default.asp">Chon Ji</a>
+        <nav class="links" style="--items: 1;">
+            <a class="activeitem" href="default.asp">Chon Ji</a>
                 <a href="news.asp">Dan-Gun</a>
                 <a href="contact.asp">Do-San</a>
                 <a href="about.asp">Won-Hyo</a>
@@ -56,10 +56,10 @@
             
             <div id="player1" ></div>
             <br>
-            <button type="button" class="btn btn-primary btn-sm">В начало</button>
-            <button type="button" class="btn btn-primary btn-sm">Воспроизвести</button>
+            <button type="button" id="btnPlay" class="btn btn-primary btn-sm">Воспроизвести</button>
+            <button type="button" id="btnStop" class="btn btn-primary btn-sm">Пауза</button>
+            <button type="button" id="btnFullScr" class="btn btn-primary btn-sm">На весь экран</button>
             <button type="button" id="btnMute" class="btn btn-secondary btn-sm">Звук</button>
-
            
             
             
@@ -67,47 +67,54 @@
         </div>
         <div class="right">
            <h6>Движения:</h6>
-            <form class="form-check" action="">
-                <input class ="moveselector form-check-input" type="checkbox" id="m1" name="m1" value="3-10" checked>
+           <button type="button" id="btnClearAll" class="btn btn-primary btn-sm">Очисть </button>
+           <button type="button" id="btnSelectAll"  class="btn btn-primary btn-sm">Выделить Все </button>
+           <div class="scrolled"> 
+               <form class="form-check" action="">
+                <input class ="moveselector form-check-input" type="checkbox" id="m1" name="m1" value="37-41" checked>
                 <label class="form-check-label" for="m1">Гуннун соги пальмок наджундэ макки </label><br>
-                <input class ="moveselector form-check-input" type="checkbox" id="m2" name="m2" value="10-15">
+                <input class ="moveselector form-check-input" type="checkbox" id="m2" name="m2" value="41-43">
                 <label class="form-check-label" for="m2">Гуннун соги каундэ чируги</label><br>
-                <input class ="moveselector form-check-input" type="checkbox" id="m3" name="m3" value="15-20" checked>
+                <input class ="moveselector form-check-input" type="checkbox" id="m3" name="m3" value="43-45" >
                 <label class="form-check-label" for="m3">Гуннун соги пальмок наджундэ макки </label><br>
-                <input class ="moveselector form-check-input" type="checkbox" id="m4" name="m4" value="20-25">
+                <input class ="moveselector form-check-input" type="checkbox" id="m4" name="m4" value="45-47">
                 <label class="form-check-label" for="m4">Гуннун соги каундэ чируги</label><br>
-                <input class ="moveselector form-check-input" type="checkbox" id="m5" name="m5" value="20-25">
+                <input class ="moveselector form-check-input" type="checkbox" id="m5" name="m5" value="47-49">
                 <label  class="form-check-label" for="m5">Гуннун соги пальмок наджундэ макки</label><br>
-                <input class ="moveselector form-check-input" type="checkbox" id="m6" name="m6" value="25-30">
+                <input class ="moveselector form-check-input" type="checkbox" id="m6" name="m6" value="49-51">
                 <label class="form-check-label" for="m6">Гуннун соги каундэ чируги</label><br>
-                <input class ="moveselector form-check-input" type="checkbox" id="m7" name="m7" value="30-35">
+                <input class ="moveselector form-check-input" type="checkbox" id="m7" name="m7" value="51-53">
                 <label class="form-check-label" for="m7">Гуннун соги пальмок наджундэ макки </label><br>
-                <input class ="moveselector form-check-input" type="checkbox" id="m8" name="m8" value="20-25">
+                <input class ="moveselector form-check-input" type="checkbox" id="m8" name="m8" value="53-55">
                 <label class="form-check-label" for="m8">Гуннун соги каундэ чируги </label><br>
-                <input class ="moveselector form-check-input" type="checkbox" id="m9" name="m9" value="35-40">
+                <input class ="moveselector form-check-input" type="checkbox" id="m9" name="m9" value="55-57">
                 <label class="form-check-label" for="m9">Ньюнча соги пальмок каундэ макки </label><br>
-                <input class ="moveselector form-check-input" type="checkbox" id="m10" name="m10" value="40-45">
+                <input class ="moveselector form-check-input" type="checkbox" id="m10" name="m10" value="57-59">
                 <label class="form-check-label" for="m10">Гуннун соги каундэ чируги</label><br>
-                <input class ="moveselector form-check-input" type="checkbox" id="m11" name="m11" value="45-50">
+                <input class ="moveselector form-check-input" type="checkbox" id="m11" name="m11" value="59-61">
                 <label class="form-check-label" for="m11">Ньюнча соги  пальмок каундэ макки</label><br>
-                <input class ="moveselector form-check-input" type="checkbox" id="m12" name="m12" value="50-55">
+                <input class ="moveselector form-check-input" type="checkbox" id="m12" name="m12" value="61-63">
                 <label class="form-check-label" for="m12">Гуннун соги каундэ чируги </label><br>
-                <input class ="moveselector form-check-input" type="checkbox" id="m13" name="m14" value="55-60">
+                <input class ="moveselector form-check-input" type="checkbox" id="m13" name="m14" value="63-65">
                 <label class="form-check-label" for="m13">Ньюнча соги  пальмок каундэ макки</label><br>
-                <input class ="moveselector form-check-input" type="checkbox" id="m14" name="m14" value="60-65">
+                <input class ="moveselector form-check-input" type="checkbox" id="m14" name="m14" value="65-67">
                 <label class="form-check-label" for="m14">Гуннун соги  каундэ чируги</label><br>
-                <input class ="moveselector form-check-input" type="checkbox" id="m15" name="m15" value="65-70">
+                <input class ="moveselector form-check-input" type="checkbox" id="m15" name="m15" value="67-69">
                 <label class="form-check-label" for="m15">Ньюнча соги пальмок каундэ макки </label><br>
-                <input class ="moveselector form-check-input" type="checkbox" id="m16" name="m16" value="70-75">
+                <input class ="moveselector form-check-input" type="checkbox" id="m16" name="m16" value="69-71">
                 <label class="form-check-label" for="m16">Гуннун соги  каундэ чируги </label><br>
-                <input class ="moveselector form-check-input" type="checkbox" id="m17" name="m17" value="75-80">
+                <input class ="moveselector form-check-input" type="checkbox" id="m17" name="m17" value="71-73">
                 <label class="form-check-label" for="m17">Гуннун соги каундэ чируги</label><br>
-                <input class ="moveselector form-check-input" type="checkbox" id="m18" name="m18" value="80-85">
+                <input class ="moveselector form-check-input" type="checkbox" id="m18" name="m18" value="73-75">
                 <label class="form-check-label" for="m18">Гуннун соги  каундэ чируги</label><br>
-                <input class ="moveselector form-check-input" type="checkbox" id="m19" name="m19" value="85-90">
+                <input class ="moveselector form-check-input" type="checkbox" id="m19" name="m19" value="75-79">
                 <label class="form-check-label" for="m19">Гуннун соги каундэ чируги</label><br>
-               
+                <input class ="moveselector form-check-input" type="checkbox" id="m20" name="m19" value="79-84">
+                <label class="form-check-label" for="m20">Нарани соги</label><br>
             </form>
+
+           </div>
+           
       
         
 
