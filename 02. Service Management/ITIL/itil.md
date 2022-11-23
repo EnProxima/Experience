@@ -121,6 +121,25 @@ Skills in service management:
 5. Market and organizational knowledge
 6. Management and administration
 7. Developing innovation
+<br>
+(to be continued)
+
+## Organizational Change Management (OCM)
+>OCM does not aim to unify all the changes in an organization into one big picture - there is neither possible or required.
+
+> People are responsible for changes in behaviour as a responsible to changes circumstances - the system in which we work
+
+### Value-driven approach VS Plan-driven approach
+ITIL is advocate value driven approach and doesn't ever mention other types of approaches. <br>
+
+[Article: Value-Driven or Plan-Driven](../docs/Value-driven%20VS%20plan-driven.pdf)
+
+## Evolution, Revolution (not ITIL), Change, Transformation.
+![](../Images/change_types.drawio.svg)
+
+
+
+
 
 
 
