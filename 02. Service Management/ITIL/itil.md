@@ -72,6 +72,8 @@ The architecture of ITIL SVS specifically enables flexibility and discourages si
 An organization can take any number of forms including but not limited to, sole traders, company, corporation, firm enterprise authority etc... 
 To achieve the maximum value from the SVS and to properly address the issue of organizational silos, it is preferable to include the whole organization in the scope rather that a subset
 
+[ITIL SVC Inputs and outputs](../docs/ITIL_SVC_IN_OUT.htm)
+
 ## Guiding principles
 ![](../Images/ITIL_Guiding_principles.jpg)
 
@@ -132,10 +134,43 @@ Skills in service management:
 ### Value-driven approach VS Plan-driven approach
 ITIL is advocate value driven approach and doesn't ever mention other types of approaches. <br>
 
-[Article: Value-Driven or Plan-Driven](../docs/Value-driven%20VS%20plan-driven.pdf)
+[PDF - Article: Value-Driven or Plan-Driven](../docs/Value-driven%20VS%20plan-driven.pdf)
+
+![](../Images/ITIL_value-based%20OC.png)
+
+[PDF - The Importance of Values in Building a
+High-Performance Culture](../docs/Article_Importance_of_Values.pdf)
 
 ## Evolution, Revolution (not ITIL), Change, Transformation.
 ![](../Images/change_types.drawio.svg)
+
+## Relationship Systems Intelligence™
+>Relationship Systems Intelligence™ incorporates Emotional and Social Intelligence and then expands
+the focus to a larger paradigm, the capacity to see oneself as part of a Relationship System. A
+Relationship System is an interdependent group of people with common identity or function.
+Identifying with and aligning with a system is a holonic shift up from simply connecting effectively
+others. It is the difference between relating with bunch of individuals in a group, to seeing the group as
+a single integrated whole.
+
+### Steps for RSI:
+1. Practicing Deep Democracy where all voices in a system are heard and honored,
+including the unpopular ones.
+2. Practicing Appreciative Inquiry where one builds on ideas after appreciating what was
+said by the other parties.
+3. Increasing positivity on a team until there is a 5:1 ratio of positive-to-¬negative
+interactions (Gottman 2002).
+4. Decreasing negative interactions with softer start ups in difficult conversations and both
+understanding and using repair bids (Gottman 2002).
+5. Increasing positivity during conflict so that a lighter field is held, even during serious or
+difficult conversations.
+6. Avoiding toxic communication styles including: blaming, defensiveness, stonewalling,
+contempt and controlling (Gottman 2002).
+
+* [An Introduction to Relationship Systems Intelligence](https://www.teamcoachingzone.com/wp-content/uploads/2015/01/RSI-White-Paper.pdf)
+* [CRR Global](https://crrglobal.com/about/rsi/)
+
+
+
 
 
 

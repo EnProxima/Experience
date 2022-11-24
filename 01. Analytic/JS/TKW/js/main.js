@@ -1,3 +1,5 @@
+
+
 const moveselector=document.querySelectorAll('.moveselector')
 const btnMute=document.getElementById('btnMute');
 const btnPlay=document.getElementById('btnPlay');
@@ -7,10 +9,10 @@ const btnSelectAll=document.getElementById('btnSelectAll');
 const btnClearAll=document.getElementById('btnClearAll');
 const btnFullScr=document.getElementById('btnFullScr');
 
-
 let blockUpdate=false;
-let  videoframe;
-let evnt;
+let videoframe;
+
+let timeout;
 var player;
 
 var section = {
@@ -19,13 +21,16 @@ var section = {
   };
 
 
+
 let video= {
     startTimeslot:undefined,
     endTimeslot:undefined,
-    videoFile: "FGOtTP5s46Y",
+   videoFile: "FGOtTP5s46Y",
     v_iframe:document.querySelector('iframe'),
-    soundMute:true
+    soundMute:false
 };
+
+
 
 btnFullScr.onclick=()=>{
     const requestFullScreen =  videoframe.requestFullScreen || videoframe.mozRequestFullScreen || videoframe.webkitRequestFullScreen;
@@ -50,14 +55,18 @@ btnSelectAll.onclick=()=>{
 }
 
 btnClearAll.onclick=()=>{
- blockUpdate=true;
- let i=1;
-//  console.log(i++)
- moveselector.forEach((item)=>{console.log("1->",item);item.checked="unchecked"; console.log("2->",item)});
+ moveselector.forEach((item)=>{item.checked=false});
  video.startTimeslot=undefined;
  video.endTimeslot=undefined;
- blockUpdate=true;
 }
+
+btnSelectAll.onclick=()=>{
+    moveselector.forEach((item)=>{item.checked=true});
+    video.startTimeslot="m1";
+    video.endTimeslot=`m${moveselector.length}`;
+   }
+
+
 
 btnPlay.onclick=()=>{
   player.mute();
@@ -71,12 +80,10 @@ btnPlay.onclick=()=>{
 frmMovementList.addEventListener('change',processCheckbox);
 
 function processCheckbox (){
-    console.log('234234234')
-
-    if (blockUpdate==false){
+   
      video.startTimeslot=undefined;
         
-     console.log('ewerwerwerwerwerwrw')
+   
      for (let item of moveselector){
       
         if (item.checked&&video.startTimeslot==undefined){
@@ -89,25 +96,25 @@ function processCheckbox (){
         for (let i=parseInt(video.startTimeslot.slice(1));i<=parseInt(video.endTimeslot.slice(1));i++){
             console.log(i);
             const chkListItem=document.getElementById(`m${i}`); 
-            chkListItem.checked="checked";
+            chkListItem.checked=true;
 
         };
     
         for (i=1;i<video.startTimeslot;i++) {
             const chkListItem=document.getElementById(`m${i}`); 
             console.log(chkListItem);
-            chkListItem.checked="unchecked";
+            chkListItem.checked=false;
         }
     
         for (i=video.endTimeslot;i<=moveselector.length;i++) {
             const chkListItem=document.getElementById(`m${i}`); 
-            console.log(chkListItem);
-            chkListItem.checked="unchecked";
+          
+            chkListItem.checked=false;
         }
     
     }
 
-}
+
 
 
 
@@ -126,8 +133,7 @@ function onYouTubeIframeAPIReady() {
     
     videoId:video.videoFile ,
     playerVars :{   
-        controls: 0  ,
-        loop:1   
+        controls: 0   
     },
     events: {
       'onReady': onPlayerReady,
@@ -142,65 +148,109 @@ function onYouTubeIframeAPIReady() {
 
 // 4. The API will call this function when the video player is ready.
 function onPlayerReady(event) {
-   console.log('event target--->',event);
+ 
    videoframe=document.querySelector('iframe');
    videoframe.classList.add("auto-resizable-iframe");
 
    btnMute.onclick=()=>{
-    console.log('1--->',video.soundMute)
-    video.soundMute=!(video.soundMute!= false);
-    console.log('2--->',video.soundMute)
+    
     if (video.soundMute){ 
-       
-        btnMute.classList.remove('btn-primary');
-        btnMute.classList.add('btn-secondary');
+      
+        btnMute.classList.remove('btn-secondary');
+        btnMute.classList.add('btn-primary');
         player.unMute();
+        setCookie('soundMute', false, 10);
         
     }
+    
+    else{
         
-        else{
-            player.mute();
-            btnMute.classList.remove('btn-secondary');
-            btnMute.classList.add('btn-primary');
-            
-        }
-        };
+        player.mute();
+        btnMute.classList.remove('btn-primary');
+        btnMute.classList.add('btn-secondary');
+        setCookie('soundMute', true, 10);
+        
+    }
+    video.soundMute=!(video.soundMute!= false);
+};
 
 btnPlay.onclick= ()=>{
     let start=document.getElementById(video.startTimeslot).value;
     let end=document.getElementById(video.endTimeslot).value;
     section.start=parseInt(start.split("-")[0]);
     section.end=parseInt(end.split("-")[1]);
-   console.log(  section.start,"----", section.end);
+   
+    video.soundMute=getCookie('soundMute');
+    console.log (video.soundMute,getCookie('soundMute') );
+    if (video.soundMute){
+        player.mute();
+    };
     player.seekTo(section.start);
 
 }
 
 btnStop.onclick=()=>{
+
+
+    if (player.getPlayerState()==1){
+        clearTimeout(timeout);
+        player.pauseVideo()
+    }
+    else if (player.getPlayerState()==2) {
+        player.playVideo()
+        player.seekTo(section.start);
     
-    if (player.getPlayerState()==1){player.pauseVideo()}
-    else if (player.getPlayerState()==2) {player.playVideo()};
+   };
 
 
    }
-
-
-                             } ;
+ } ;
 
 // 5. The API calls this function when the player's state changes.
 
 function onPlayerStateChange(event) {
-    console.log("onPlayerState change events--- ",event.data);
+
     if (event.data == YT.PlayerState.PLAYING) {
         var duration = section.end - section.start;
-        setTimeout(restartVideoSection, duration * 1000);
+        timeout=setTimeout(restartVideoSection, duration * 1000);
       }
 
   }
   
   function restartVideoSection() {
-    if (player.getPlayerState()==1){player.seekTo(section.start);}
+    if (player.getPlayerState()==1){
+        player.seekTo(section.start)
+       
+        ;}
     
   }
+
+
+
+  //Cookie functions
+  function setCookie(cname, cvalue, exdays) {
+    const d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    let expires = "expires="+d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  }
+  
+  function getCookie(cname) {
+    let name = cname + "=";
+    let ca = document.cookie.split(';');
+    for(let i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == ' ') {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  }
+  
+  
+
 
   
