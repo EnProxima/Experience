@@ -112,7 +112,7 @@ In the digital service economy agilty and resilience ave vital for an organizati
 ## Building affective team
 ![](/02.%20Service%20Management/Images/ITIL_BuildingAffectiveTeam.svg)
 
-### Competency codes and profiles
+### Competency codes and profiles (LACMT)
 ![](../Images/ITIL_profiles_roles.png)
 
 Skills in service management:
