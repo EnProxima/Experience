@@ -2,6 +2,9 @@
 ## Consumer
 ![](../Images/ITIL_consumer.svg)
 
+**Conceptual map of Demand to Value part**
+![](../Images/ITIL_DemandToValueCM.drawio.svg)
+
 ## Product and service
 ![](../Images/ITIL_ProductAsREsources.svg)
 
@@ -169,6 +172,15 @@ contempt and controlling (Gottman 2002).
 * [An Introduction to Relationship Systems Intelligence](https://www.teamcoachingzone.com/wp-content/uploads/2015/01/RSI-White-Paper.pdf)
 * [CRR Global](https://crrglobal.com/about/rsi/)
 
+
+
+
+--------------
+#f5c812
+#345841
+#e4dccf
+#cba870
+.
 
 
 
