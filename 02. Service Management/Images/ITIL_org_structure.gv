@@ -1,8 +1,8 @@
 digraph G {
 
-bgcolor=dimgray
-node[shape=box,style=filled,color=greenyellow fontcolor="#062744"]
-edge[color=greenyellow,fontcolor=aliceblue]
+bgcolor="#FFF6E8"
+node[shape=box,style=filled,color="#F5C812" fontcolor="#062744"]
+edge[color=black,fontcolor=aliceblue]
 
 Organization [color=chocolate]
 Functional, Divisional,Matrix, Flat  [color=yellow]
